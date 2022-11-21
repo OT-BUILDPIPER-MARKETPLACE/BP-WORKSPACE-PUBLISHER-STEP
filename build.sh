@@ -2,6 +2,7 @@
 source /opt/buildpiper/shell-functions/functions.sh
 source /opt/buildpiper/shell-functions/log-functions.sh
 
-WORKSPACE_DIR="${EXECUTION_DIR}/${EXECUTION_TASK_ID}"
-logInfoMessage "I'll publish files to  [$WORKSPACE_DIR]"
+WORKSPACE_PUBLISH_DIR="${EXECUTION_DIR}/${EXECUTION_TASK_ID}"
+logInfoMessage "I'll publish files available at ${FOLDER_TO_BE_COPIED} to [$WORKSPACE_PUBLISH_DIR]"
+cp -r "${FOLDER_TO_BE_COPIED}" "${WORKSPACE_PUBLISH_DIR}"
 sleep  "$SLEEP_DURATION"
