@@ -1,6 +1,9 @@
 #!/bin/bash
-source /opt/buildpiper/shell-functions/functions.sh
-source /opt/buildpiper/shell-functions/log-functions.sh
+source /opt/buildpiper/shell-functions/aws-functions.sh  
+source /opt/buildpiper/shell-functions/file-functions.sh  
+source /opt/buildpiper/shell-functions/functions.sh  
+source /opt/buildpiper/shell-functions/log-functions.sh  
+source /opt/buildpiper/shell-functions/str-functions.sh
 
 WORKSPACE_PUBLISH_DIR="${EXECUTION_DIR}/${EXECUTION_TASK_ID}"
 SOURCE_FOLDER="${WORKSPACE}"/"${CODEBASE_DIR}"/"${FOLDER_TO_BE_COPIED}"
